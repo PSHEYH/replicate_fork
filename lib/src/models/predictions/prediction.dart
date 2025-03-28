@@ -72,7 +72,7 @@ class Prediction {
       output: json['output'],
       error: json['error'],
       logs: json['logs'],
-      metrics: PredictionMetrics.fromJson(json['metrics']),
+      metrics: PredictionMetrics.fromJson(json['metrics'] ?? {}),
     );
   }
 
